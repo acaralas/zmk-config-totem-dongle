@@ -35,7 +35,101 @@
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
+            layers = <-1>
         };
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            bindings = <&kp TAB>;
+            layers = <-1>
+        };
+        combo_lctrl {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&kp LCTRL>;
+            layers = <-1>
+        };
+        combo_rctrl {
+            timeout-ms = <50>;
+            key-positions = <29 30>;
+            bindings = <&kp RCTRL>;
+            layers = <-1>
+        };
+        combo_lalt {
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            bindings = <&kp LALT>;
+            layers = <-1>
+        };
+        combo_ralt {
+            timeout-ms = <50>;
+            key-positions = <28 29>;
+            bindings = <&kp RALT>;
+            layers = <-1>
+        };
+        combo_lgui {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+            bindings = <&kp LGUI>;
+            layers = <-1>
+        };
+        combo_rgui {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            bindings = <&kp RGUI>;
+            layers = <-1>
+        };
+        combo_cro_sh {
+            timeout-ms = <50>;
+            key-positions = <11 12>;
+            bindings = <&kp LBKT>;
+            layers = <0>
+        };
+        combo_cro_dj {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&kp RBKT>;
+            layers = <0>
+        };
+        combo_cro_zh {
+            timeout-ms = <50>;
+            key-positions = <5 6>;
+            bindings = <&kp BSLH>;
+            layers = <0>
+        };
+        combo_cro_ch {
+            timeout-ms = <50>;
+            key-positions = <18 19>;
+            bindings = <&kp SEMI>;
+            layers = <0>
+        };
+        combo_lbkt {
+            timeout-ms = <50>;
+            key-positions = <6 7>;
+            bindings = <&kp LBKT>;
+            layers = <0>
+        };
+        combo_rbkt {
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            bindings = <&kp LBKT>;
+            layers = <0>
+        };
+        combo_lpar {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            bindings = <&kp LPAR>;
+            layers = <0>
+        };
+        combo_rpar {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&kp LPAR>;
+            layers = <0>
+        };
+
+
+    
     };
 
     macros {
@@ -57,17 +151,18 @@
             //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
             //             ┃     A     ┃     S     ┃     D     ┃     F     ┃     G     ┃   ┃     H     ┃     J     ┃     K     ┃     L     ┃     ;     ┃
             // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃     Q     ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     /     ┃     \     ┃
+            // ┃   SHIFT   ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     /     ┃   SHIFT   ┃
             // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃    DEL    ┃    TAB    ┃    SPC    ┃   ┃   ENTER   ┃           ┃   BSPC    ┃
+            //                                     ┃    DEL    ┃   ENTER   ┃   NUM_LY  ┃   ┃ BACKSPACE ┃   SPACE   ┃  NAV_LY   ┃
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &kp O       &kp P
-       &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMI
-&kp Q  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp BSLH
-                               &kp DEL      &lt NAV TAB  &kp SPACE    &kp RET  &lt SYM ESC  &kp BSPC
+                                &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
+                                &kp A       &kp S       &kp D       &kp F       &kp G           &kp H       &kp J       &kp K       &kp L       &kp SEMI
+                    &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH        &kp RSHFT
+                                                        &kp DEL     &kp RET     &lt NUM         &kp BSPC    &kp SPACE   &lt NAV
             >;
+//                                    &kp DEL &lt NAV TAB  &kp SPACE    &kp RET  &lt SYM ESC  &kp BSPC            
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -75,7 +170,7 @@
         nav_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "NAVI";
+            label = "NUM";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -101,7 +196,7 @@
         sim_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "SYM";
+            label = "NAV";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -127,7 +222,7 @@
         adjust_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "ADJ";
+            label = "FNC";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -149,3 +244,4 @@
         };
     };
 };
+
