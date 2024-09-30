@@ -122,62 +122,62 @@
         combo_lpar {
             timeout-ms = <50>;
             key-positions = <16 17>;
-            bindings = <&kp KP_MULTIPLY>;
+            bindings = <&sk LSHFT N8>;
             layers = <0>;
         };
         combo_rpar {
             timeout-ms = <50>;
             key-positions = <17 18>;
-            bindings = <&kp LPAR>;
+            bindings = <&sk LSHFT N9>;
             layers = <0>;
         };
         // BRACES "{" & "}"
         combo_ls_lbrc {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <6 7 21 22>;
-            bindings = <&kp RALT B>;
+            bindings = <&sk RALT B>;
             layers = <0>;
         };
         combo_ls_rbrc {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <7 8 21 22>;
-            bindings = <&kp RALT N>;
+            bindings = <&sk RALT N>;
             layers = <0>;
         };
         combo_rs_lbrc {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <6 7 29 30>;
-            bindings = <&kp RALT B>;
+            bindings = <&sk RALT B>;
             layers = <0>;
         };
         combo_rs_rbrc {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <7 8 29 30>;
-            bindings = <&kp RALT N>;
+            bindings = <&sk RALT N>;
             layers = <0>;
         };
         // QUOTE, DOUBLE "
         combo_ls_dquote {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <16 17 21 22>;
-            bindings = <&kp LSHFT N2>;
+            bindings = <&sk LSHFT N2>;
             layers = <0>;
         };
         combo_rs_dquote {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <16 17 29 30>;
-            bindings = <&kp RSHFT N2>;
+            bindings = <&sk RSHFT N2>;
             layers = <0>;
         };
         // QUOTE, SINGLE '
         combo_ls_squote {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <17 18 21 22>;
             bindings = <&kp KP_MINUS>;
             layers = <0>;
         };
         combo_rs_squote {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <17 18 29 30>;
             bindings = <&kp KP_MINUS>;
             layers = <0>;
@@ -203,11 +203,11 @@
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃     Q     ┃     W     ┃     E     ┃     R     ┃     T     ┃   ┃     Y     ┃     U     ┃     I     ┃     O     ┃     P     ┃
+            //             ┃     Q   [ESC]   W     ┃     E     ┃     R     ┃     T     ┃   ┃     Z    [Ž]    U   ["["]   I   ["]"]   O     ┃     P     ┃
             //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃     A     ┃     S     ┃     D     ┃     F     ┃     G     ┃   ┃     H     ┃     J     ┃     K     ┃     L     ┃     '     ┃
+            //             ┃     A   [TAB]   S    [Š]    D    [Đ]    F     ┃     G     ┃   ┃     H     ┃     J   ["("]   K   [")"]   L    [Č]    Ć     ┃
             // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃   SHIFT   ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     -     ┃   SHIFT   ┃
+            // ┃   SHIFT   ┃     Y   [SHF]   X   [CTL]   C   [WIN]   V   [ALT]   B     ┃   ┃     N   [ALT]   M   [WIN]   ,   [CTL]   .   [SHF]   -     ┃   SHIFT   ┃
             // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
             //                                     ┃    DEL    ┃   ENTER   ┃   NUM_LY  ┃   ┃ BACKSPACE ┃   SPACE   ┃  NAV_LY   ┃
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
