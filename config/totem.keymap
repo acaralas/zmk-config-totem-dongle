@@ -133,13 +133,13 @@
         };
         // BRACES "{" & "}"
         combo_ls_lbrc {
-            timeout-ms = <200>;
+            timeout-ms = <300>;
             key-positions = <6 7 21 22>;
             bindings = <&kp RALT(B)>;
             layers = <0>;
         };
         combo_ls_rbrc {
-            timeout-ms = <200>;
+            timeout-ms = <300>;
             key-positions = <7 8 21 22>;
             bindings = <&kp RALT(N)>;
             layers = <0>;
@@ -158,7 +158,7 @@
         };
         // QUOTE, DOUBLE "
         combo_ls_dquote {
-            timeout-ms = <200>;
+            timeout-ms = <300>;
             key-positions = <16 17 21 22>;
             bindings = <&kp LSHFT(N2)>;
             layers = <0>;
@@ -171,7 +171,7 @@
         };
         // QUOTE, SINGLE '
         combo_ls_squote {
-            timeout-ms = <200>;
+            timeout-ms = <300>;
             key-positions = <17 18 21 22>;
             bindings = <&kp KP_MINUS>;
             layers = <0>;
