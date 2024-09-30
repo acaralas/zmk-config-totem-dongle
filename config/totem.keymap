@@ -126,7 +126,7 @@
             layers = <0>;
         };
         combo_rpar {
-            timeout-ms = <50>;
+            timeout-ms = <60>;
             key-positions = <17 18>;
             bindings = <&kp LSHFT(N9)>;
             layers = <0>;
