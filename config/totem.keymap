@@ -109,13 +109,13 @@
         combo_lbkt {
             timeout-ms = <50>;
             key-positions = <6 7>;
-            bindings = <&kp RALT(F)>;
+            bindings = <&kp LCTRL(LALT(F))>;
             layers = <0>;
         };
         combo_rbkt {
             timeout-ms = <50>;
             key-positions = <7 8>;
-            bindings = <&kp RALT(G)>;
+            bindings = <&kp LCTRL(LALT(G))>;
             layers = <0>;
         };
         // PARENTESIS "(" & ")"
@@ -126,11 +126,62 @@
             layers = <0>;
         };
         combo_rpar {
-            timeout-ms = <60>;
+            timeout-ms = <50>;
             key-positions = <17 18>;
             bindings = <&kp LSHFT(N9)>;
             layers = <0>;
         };
+        // BRACES "{" & "}"
+        combo_ls_lbrc {
+            timeout-ms = <200>;
+            key-positions = <6 7 21 22>;
+            bindings = <&kp LCTRL(LALT(B))>;
+            layers = <0>;
+        };
+        combo_ls_rbrc {
+            timeout-ms = <200>;
+            key-positions = <7 8 21 22>;
+            bindings = <&kp LCTRL(LALT(N))>;
+            layers = <0>;
+        };
+//        combo_rs_lbrc {
+//            timeout-ms = <200>;
+//            key-positions = <6 7 29 30>;
+//            bindings = <&kp LCTRL(LALT(B))>;
+//            layers = <0>;
+//        };
+//        combo_rs_rbrc {
+//            timeout-ms = <200>;
+//            key-positions = <7 8>;
+//            bindings = <&kp LCTRL(LALT(N))>;
+//            layers = <0>;
+//        };
+//        // QUOTE, DOUBLE "
+//        combo_ls_dquote {
+//            timeout-ms = <200>;
+//            key-positions = <16 17>;
+//            bindings = <&kp LSHFT(N2)>;
+//            layers = <0>;
+//        };
+//        combo_rs_dquote {
+//            timeout-ms = <200>;
+//            key-positions = <16 17>;
+//            bindings = <&kp RSHFT(N2)>;
+//            layers = <0>;
+//        };
+//        // QUOTE, SINGLE '
+//        combo_ls_squote {
+//            timeout-ms = <200>;
+//            key-positions = <17 18>;
+//            bindings = <&kp KP_MINUS>;
+//            layers = <0>;
+//        };
+//        combo_rs_squote {
+//            timeout-ms = <200>;
+//            key-positions = <17 18>;
+//            bindings = <&kp KP_MINUS>;
+//            layers = <0>;
+//        };
 
 
     
