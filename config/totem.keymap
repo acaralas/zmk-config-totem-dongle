@@ -181,13 +181,15 @@
         combo_squote {
             timeout-ms = <200>;
             key-positions = <17 18 21 22>;
-            bindings = <&kp LS(MINUS)>;
+            bindings = <&kp MINUS>;
             layers = <0>;
         };
 
         combo_fn_layer {
             bindings = <&mo 3>;
             key-positions = <37 34>;
+            timeout-ms = <200>;
+            layers = <0>;
         };
     };
 
@@ -241,7 +243,7 @@
             bindings = <
         &kp RA(Q)  &kp RA(W)  &kp RA(E)      &kp LS(N4)  &kp RA(N5)    &kp LS(EQUAL)  &kp N7  &kp N8  &kp N9  &kp EQUAL
         &none      &none      &kp LS(MINUS)  &kp LS(N1)  &kp LS(N6)    &kp LS(N0)     &kp N4  &kp N5  &kp N6  &kp COMMA
-&trans  &none      &none      &none          &kp RA(V)   &none         &kp LS(N7)     &kp N1  &kp N2  &kp N3  &kp MINUS  &trans
+&trans  &none      &none      &none          &kp RA(V)   &none         &kp LS(N7)     &kp N1  &kp N2  &kp N3  &kp KP_MINUS  &trans
                               &trans         &trans      &trans        &trans         &trans  &kp N0
             >;
         };
@@ -249,10 +251,10 @@
         nav_layer {
             label = "NAV";
             bindings = <
-        &none  &none      &none       &none        &none     &kp INSERT       &kp PG_UP      &kp UP_ARROW    &none      &none
-        &none  &none      &none       &none        &none     &kp HOME         &kp LEFT       &kp DOWN_ARROW  &kp RIGHT  &kp END
-&trans  &none  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &none     &kp PRINTSCREEN  &kp RS(PG_DN)  &none           &none      &none    &trans
-                          &trans      &trans       &trans    &trans           &trans         &trans
+        &none  &none         &none          &none           &none        &kp INSERT       &kp PG_UP  &kp UP_ARROW    &none      &none
+        &none  &none         &none          &none           &none        &kp HOME         &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp END
+&trans  &none  &kp C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE  &kp LG(V)    &kp PRINTSCREEN  &kp PG_DN  &none           &none      &none    &trans
+                             &trans         &trans          &trans       &trans           &trans     &trans
             >;
         };
 
