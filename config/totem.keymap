@@ -36,6 +36,19 @@
             bindings = <&kp ESC>;
         };
 
+        combo_caps_word_l {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&caps_word>;
+            layers = <0>;
+        };
+
+        combo_caps_word_r {
+            timeout-ms = <50>;
+            key-positions = <29 30>;
+            bindings = <&caps_word>;
+            layers = <0>;
+        };
 
         combo_cro_sh {
             timeout-ms = <50>;
@@ -212,7 +225,7 @@
             //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
             //             ┃     A   [TAB]   S    [Š]    D    [Đ]    F     ┃     G     ┃   ┃     H     ┃     J   ["("]   K   [")"]   L    [Č]    Ć     ┃
             // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃   SHIFT   ┃     Y   [SHF]   X   [CTL]   C   [WIN]   V   [ALT]   B     ┃   ┃     N   [ALT]   M   [WIN]   ,   [CTL]   .   [SHF]   -     ┃   SHIFT   ┃
+            // ┃     -     ┃     Y   [SHF]   X   [CTL]   C   [WIN]   V   [ALT]   B     ┃   ┃     N   [ALT]   M   [WIN]   ,   [CTL]   .   [SHF]   -     ┃     -     ┃
             // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
             //                                     ┃    DEL    ┃   ENTER   ┃   NUM_LY  ┃   ┃ BACKSPACE ┃   SPACE   ┃  NAV_LY   ┃
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -221,7 +234,7 @@
            &kp Q  &kp W  &kp E    &kp R    &kp T            &kp Y     &kp U      &kp I      &kp O    &kp P
            &mt LSHFT A  &mt LCTRL S  &mt LALT D    &mt LGUI F    &kp G            &kp H     &mt RGUI J      &mt RALT K      &mt RCTRL L    &mt RSHFT SQT
 &kp LSHFT  &kp Z  &kp X  &kp C    &kp V    &kp B            &kp N     &kp M      &kp COMMA  &kp DOT  &kp KP_MINUS  &kp RSHFT
-                         &kp DEL  &kp RET  &lt NAV TAB      &kp BSPC  &kp SPACE  &mo 2
+                         &kp DEL  &kp RET  &lt NUM TAB      &kp BSPC  &kp SPACE  &mo 2
             >;
 
             //                                    &kp DEL &lt NAV TAB  &kp SPACE    &kp RET  &lt SYM ESC  &kp BSPC            
